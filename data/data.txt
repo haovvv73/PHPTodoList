@@ -1,0 +1,27 @@
+1|Nguyen Van A|10-10-2000|7.9
+2|Nguyen Van B|10-10-2002|8.0
+3|Nguyen Van C|10-10-2005|5.0
+4|Nguyen Van D|10-10-2000|7.8
+5|Nguyen Van E|10-10-2023|6.5
+6|Nguyen Van F|10-10-2008|7.8
+7|Nguyen Van J|10-10-2000|7.8
+8|Nguyen Van H|10-10-2015|7.8
+9|Nguyen Van I|10-10-2000|7.8
+10|Nguyen Van J|10-10-2017|10.0
+11|Nguyen Van K|10-10-2000|8.0
+12|Nguyen Van L|10-10-2002|7.8
+13|Nguyen Van M|10-10-2000|7.2
+14|Nguyen Van N|10-10-1990|3.5
+15|Nguyen Van O|10-10-2000|7.8
+16|Nguyen Van P|10-10-2023|7.8
+17|Nguyen Van Q|10-10-2000|7.8
+18|Nguyen Van R|10-10-2018|7.0
+19|Nguyen Van S|10-10-2000|7.8
+20|Nguyen Van T|10-10-2001|4.5
+21|Nguyen Van U|10-10-2023|7.8
+22|Nguyen Van W|10-10-2018|4.9
+23|Nguyen Van Y|10-10-2000|7.4
+24|Nguyen Van X|10-10-2018|7.8
+20200218|minh dang asd|2023-03-03|10.0
+20110184|Gia Hao update|2023-03-24|8.0
+20110181|hung|2023-03-05|10
