@@ -5,6 +5,8 @@
         private $StudentName;
         private $BirthDay;
         private $AverageMark;
+        public $max = false;
+        public $min = false;
 
         // METHOD
         function __construct($id = null, $name = null, $birthday = null, $averagemark = null)
@@ -29,6 +31,19 @@
 
         public function getAverageMark(){
             return $this->AverageMark;
+        }
+
+        public function setMax(){
+            $this->max = true;
+        }
+        public function setMin(){
+            $this->min = true;
+        }
+        public function getMax(){
+            return $this->max;
+        }
+        public function getMin(){
+            return $this->min;
         }
 
     }

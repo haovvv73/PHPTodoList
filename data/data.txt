@@ -7,7 +7,6 @@
 7|Nguyen Van J|10-10-2000|7.8
 8|Nguyen Van H|10-10-2015|7.8
 9|Nguyen Van I|10-10-2000|7.8
-10|Nguyen Van J|10-10-2017|10.0
 11|Nguyen Van K|10-10-2000|8.0
 12|Nguyen Van L|10-10-2002|7.8
 13|Nguyen Van M|10-10-2000|7.2
@@ -22,6 +21,5 @@
 22|Nguyen Van W|10-10-2018|4.9
 23|Nguyen Van Y|10-10-2000|7.4
 24|Nguyen Van X|10-10-2018|7.8
-20200218|minh dang asd|2023-03-03|10.0
 20110184|Gia Hao update|2023-03-24|8.0
 20110181|hung|2023-03-05|10

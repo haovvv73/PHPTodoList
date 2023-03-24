@@ -19,7 +19,31 @@
 
     include "config.php";
     // danh sach student
-    define("DANHSACH", GetData())
+    define("DANHSACH", GetData());
+
+    // find max min average mark
+    $minNum = DANHSACH[0]->getAverageMark();
+    $maxNum = DANHSACH[0]->getAverageMark();
+    $index = 0;
+    $index1 = 0;
+    $index2 = 0;
+
+    foreach (DANHSACH as $student) {
+        $adv = $student->getAverageMark();
+        if($maxNum <= $adv){
+            $maxNum = $adv;
+            $index1 = $index;
+        }
+        if($minNum >= $adv){
+            $minNum = $adv;
+            $index2 = $index;
+        }
+        $index++;
+    }
+
+    // set max min attribute
+    DANHSACH[$index1]->setMax();
+    DANHSACH[$index2]->setMin();
 
     ?>
 
@@ -86,7 +110,7 @@
             </div>
 
             <!-- Table list user -->
-            <table class="table table-secondary table-striped">
+            <table class="table table-secondary ">
                 <thead>
                     <tr>
                         <th scope="col">Student ID</th>
@@ -98,21 +122,31 @@
                     </tr>
                 </thead>
                 <tbody>
-
                     <!-- // render DANHSACH student -->
                     <?php foreach (DANHSACH as $student) : ?>
                         <tr>
                             <th scope="row"> <?php echo $student->getId() ?> </th>
                             <td> <?php echo $student->getName() ?> </td>
-                            <td> 
-                                <?php 
-                                    $BirthDay = $student->getBirthday() ;
-                                    $time = strtotime($BirthDay);
-                                    $newformatBirthDay = date('m-d-Y', $time);
-                                    echo $newformatBirthDay;
-                                ?> 
+                            <td>
+                                <?php
+                                $BirthDay = $student->getBirthday();
+                                $time = strtotime($BirthDay);
+                                $newformatBirthDay = date('m-d-Y', $time);
+                                echo $newformatBirthDay;
+                                ?>
                             </td>
-                            <td> <?php echo $student->getAverageMark() ?> </td>
+                            <td 
+                                class="
+                                    <?php 
+                                        if($student->getMax() == true){
+                                            echo "text-bg-primary";
+                                        }
+                                        if($student->getMin() == true ){
+                                            echo "text-bg-danger";
+                                        }
+                                    ?>" > 
+                                <?php echo $student->getAverageMark() ?> 
+                            </td>
                             <td>
                                 <form action="DeleteUser.php" method="POST">
                                     <button type="submit" value="<?php echo $student->getId(); ?>" name="btnDelete" class="btn btn-danger">delete</button>
